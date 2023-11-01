@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mindful Escape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+  <header>
+        <div class="background" id="homepage">
+        <button id="music">Music: Off</button>
+        <div class="word">
+          <div class="hover">
+            <div class="fade-in-text">
+              <h2>Mindful</h2>
+            </div>
+          </div>
+          <div class="hover">
+            <div></div>
+            <div></div>
+            <h1>E</h1>
+          </div>
+          <div class="hover">
+            <div></div>
+            <div></div>
+            <h1>s</h1>
+          </div>
+          <div class="hover">
+            <div></div>
+            <div></div>
+            <h1>c</h1>
+          </div>
+          <div class="hover">
+            <div></div>
+            <div></div>
+            <h1>a</h1>
+          </div>
+          <div class="hover">
+            <div></div>
+            <div></div>
+            <h1>p</h1>
+          </div>
+          <div class="hover">
+            <div></div>
+            <div></div>
+            <h1>e</h1>
+          </div>
+        </div>
+      </div>
+    <menu>
+      <a href="index.html"><button>Home</button></a>
+      <div class="dropdown">
+        <button class="TOS">Types of Stress</button>
+        <div class="dropdown-content">
+          <a href="relationshipstress.html">Relationship Stress</a>
+          <a href="workstress.html">Work Stress</a>
+          <a href="selfconfidence.html">Self Confidence</a>
+          <a href="circumstantialstress.html">Circumstantial Stress</a>
+          <a href="fearofunknown.html">Fear of the Unknown</a>
+        </div>
+      </div>
+      <a href="aboutus.html"><button>About Us</button></a>
+        <div class="dropdown">
+          <button class="Engage">Engage</button>
+          <div class="dropdown-content">
+            <a href="blog.html">Blog</a>
+            <a href="forum.html">Forum</a>
+          </div>
+        </div>
+        </div>
+    </div>
+    </menu>
+  </header>
+
+  <main>
+    <h3>What We Are</h3>
+    <p>Mindful Escape is a project produced by six LMU freshmen intended to address and alleviate common sources
+    of
+    stress in the lives of teenagers, including but not limited to school, friendships, self-image, and family. Our
+    website will help you identify what is causing stress in your life with its various features: a simple quiz,
+    self-care advice and resources, and a forum that connects you to others undergoing similar struggles.</p>
+    <h3>Identify Your Stress</h3>
+    <p> Answer these quick 10 questions to find out what area in your life is causing you the most stress.</p>
+    <div id="quiz">
+      <p id="quizcontent">Click the button to begin!</p>
+      <button id="startquizbutton">Start</button>
+      <div id="quizanswers">
+        <input type="checkbox" id="stronglydisagree" name="1">
+        <label for="stronglydisagree">Strongly Disagree</label> <br>
+        <input type="checkbox" id="disagree" name="2">
+        <label for="disagree">Disagree</label> <br>
+        <input type="checkbox" id="neither" name="3">
+        <label for="neither">Neither agree nor disagree</label> <br>
+        <input type="checkbox" id="agree" name="4">
+        <label for="agree">Agree</label> <br>
+        <input type="checkbox" id="stronglyagree" name="5">
+        <label for="stronglyagree">Strongly Agree</label>
+      </div>
+    </div>
+
+       <h3>Random Advice</h3>
+    <p>Are you feeling unsure of what to do and need some help-- or just bored? This advice generator will send you in the right direction!</p>
+    <div id="advice">
+      <button class = "apibutton" id="startadvicebutton">Advice</button>
+      <div id="advicecontent">
+        <p id="advicetext"></p>
+          <dialog id="error">
+          <p>Could not fetch this one.</p>
+          <form method="dialog">
+            <button>OK</button>
+          </form>
+        </dialog>
+      </div>
+      </div>
+    </div>
+
+        <h3>Zen Quotes</h3>
+    <p>Get some inspiration for your own life in the form of a quote from somebody wise!</p>
+    <div id="zen">
+      <button class = "apibutton" id="zenadvice">Quote</button>
+      <div id="zencontent">
+        <p id="zenquote"></p>
+        <p id="zenquoteauthor"></p>
+          <dialog id="error">
+          <p>Could not fetch this one.</p>
+          <form method="dialog">
+            <button>OK</button>
+          </form>
+        </dialog>
+      </div>
+      </div>
+    </div>
+    
+
+    
+    <h3>Self Care Resources</h3>
+    <details>
+      <summary>Mental Health Hotlines</summary>
+      Suicide and Mental Health Crisis Hotline: 988 <br>
+      National Hopeline Network: 1-800-784-2433 <br>
+      Trevor Helpline (Support for LGBTQ+ teens): 1-866-488-7386 <br>
+      <a href="https://studentaffairs.lmu.edu/wellness/studentpsychologicalservices/about/" target = "_blank" rel = "noreferrer noopener">Student Psychological
+        Services (LMU)</a> <br>
+      <a href="https://www.healthyplace.com/other-info/resources/mental-health-hotline-numbers-and-referral-resources" target = "_blank" rel = "noreferrer noopener">Directory
+        of Other Mental Health Hotlines (US and International)</a>
+    </details>
+
+  </main>
+  <footer>
+    <p>A Wellness and Self-Care Web App brought to you by Addy, Amelie, Cara, Mannya, Milka, and Vanessa <br> ©️ CSSI
+      2023</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="quiz.js"></script>
+
+
+</body>
+
+</html>
