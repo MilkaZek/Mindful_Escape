@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <link href="forum.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+  <link href="stresspage.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <div class="background">
+      <button id="music">Music: Off</button>
+      </audio>
+      <h1>Mindful Escape</h1>
+    </div>
+    <menu>
+      <a href="index.html"><button>Home</button></a>
+      <div class="dropdown">
+        <button class="TOS">Types of Stress</button>
+        <div class="dropdown-content">
+          <a href="relationshipstress.html">Relationship Stress</a>
+          <a href="workstress.html">Work Stress</a>
+          <a href="selfconfidence.html">Self Confidence</a>
+          <a href="circumstantialstress.html">Circumstantial Stress</a>
+          <a href="fearofunknown.html">Fear of the Unknown</a>
+        </div>
+      </div>
+      <a href="aboutus.html"><button>About Us</button></a>
+      <div class="dropdown">
+        <button class="Engage">Engage</button>
+        <div class="dropdown-content">
+          <a href="blog.html">Blog</a>
+          <a href="forum.html">Forum</a>
+        </div>
+      </div>
+      </div>
+    </menu>
+  </header>
+
+  <main>
+    <section id="discussion">
+      <h2>Discussion</h2>
+      <div id="messages"></div>
+      <form id="message-form">
+        <input type="text" id="username-input" placeholder="Username" required>
+        <textarea id="message-input" rows="3" placeholder="Enter your message" required></textarea>
+        <button class="forumbutton" type="submit">Send</button>
+      </form>
+    </section>
+    <section id="question">
+      <h2>Discussion Question</h2>
+      <h3 id="question-text">How do you manage stress in your daily life?</h3>
+      <button class = "forumbutton" id="new-question-button">New Question</button>
+    </section>
+  </main>
+  <footer>
+    <p>A Wellness and Self-Care Web App brought to you by Addy, Amelie, Cara, Mannya, Milka, and Vanessa <br> ©️
+      CSSI
+      2023</p>
+  </footer>
+  <script src="forum.js"></script>
+</body>
+
+</html>

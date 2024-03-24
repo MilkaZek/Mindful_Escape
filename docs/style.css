@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: #cfeaf7;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #15749d;
+}
+
+h1 {
+  position: relative;
+  color: #fff;
+  font: 900 60px 'Dancing Script';
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  color: #fff;
+  font: 900 60px 'Dancing Script';
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.2em;
+}
+
+h3 {
+  color: #1c96ca;
+  font: 900 60px 'Dancing Script';
+  text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+  color: #1c96ca;
+  font-size:
+    font-family: 'Lato';
+}
+
+summary {
+  font-family: 'Lato', serif;
+  font-size: 1.8rem;
+  color: #15749d;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+details {
+  color: steelblue;
+  font-size: 1.1rem;
+}
+
+details>summary {
+  list-style-type: "➢ ";
+}
+
+footer {
+  text-align: center;
+  background-color: #1c96ca;
+  color: white;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+#quiz, #advice, #zen {
+  background-color: #1c96ca;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 4px dashed #15749d;
+}
+
+#quizanswers {
+  display: none;
+}
+
+#music,
+#startquizbutton, .apibutton {
+  font-family: 'Lato', serif;
+  font-size: 1em;
+  background-color: #cfeaf7;
+  color: #15749d;
+  border-color: lightblue;
+  border-radius: 8px;
+}
+
+/* HEADER AND TEXT ANIMATION */
+
+.background {
+  background: url(https://images.unsplash.com/photo-1568145675395-66a2eda0c6d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80) center center/cover;
+  width: auto;
+  height: auto;
+  padding: 2em;
+}
+
+.background .word {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.background .hover {
+  flex: 1;
+  display: grid;
+  height: 450px;
+  grid: repeat(2, 2fr)/100%;
+  position: relative;
+}
+
+.background .hover div {
+  position: relative;
+  z-index: 5;
+}
+
+.background .hover div:nth-child(1):hover~h1 {
+  margin-top: -10px;
+}
+
+.background .hover div:nth-child(2):hover~h1 {
+  margin-top: -50px;
+}
+
+.background h1 {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -30px;
+  transition: 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 0;
+}
+
+.word {
+  cursor: pointer;
+}
+
+div.hover {
+  height: 100px;
+}
+
+/* MENU BUTTONS */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-family: Raleway;
+  text-align: center;
+
+}
+
+.dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+}
+
+menu button {
+  background-color: #15749d;
+  color: white;
+  padding: 10px 20px;
+  /* Set the padding */
+  border: none;
+  /* Remove borders */
+  cursor: pointer;
+  /* Add a pointer cursor */
+  border-radius: 2px;
+  /* Add rounded corners */
+  margin-bottom: 5px;
+  /* Add some margin for spacing */
+  font-family: Raleway;
+  font-size: 14px;
+  width: 140px;
+  height: 40px;
+}
+
+/* TEXT ANIMATION */
+
+.fade-in-text {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
