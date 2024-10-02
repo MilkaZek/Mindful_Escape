@@ -93,7 +93,7 @@ for (let i =0; i < stressTally.length; i +=1){
     console.log("works")
   }
 }
-  window.location.replace(`https://mindful-escape-beta.cb-0090.repl.co/${stressLinks[index]}`)
+  window.location.replace(`https://milkazek.github.io/Mindful_Escape/${stressLinks[index]}`)
 }
 
 function clearAllChecks() {
