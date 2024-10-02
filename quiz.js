@@ -91,8 +91,8 @@ function countTally(){
       highestTally = stressTally[i]
       index = i
       console.log("works")
+    }
   }
-}
   window.location.replace(`https://milkazek.github.io/Mindful_Escape/${stressLinks[index]}`)
 }
 
