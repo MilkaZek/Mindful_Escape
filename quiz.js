@@ -83,14 +83,14 @@ function newQuestion (){
 
 
 function countTally(){
-let highestTally = stressTally[0]
-let index = 0
+  let highestTally = stressTally[0]
+  let index = 0
   console.log(`${highestTally}`)
-for (let i =0; i < stressTally.length; i +=1){
-  if(stressTally[i]>highestTally){
-    highestTally = stressTally[i]
-    index = i
-    console.log("works")
+  for (let i =0; i < stressTally.length; i +=1){
+    if(stressTally[i]>highestTally){
+      highestTally = stressTally[i]
+      index = i
+      console.log("works")
   }
 }
   window.location.replace(`https://milkazek.github.io/Mindful_Escape/${stressLinks[index]}`)
