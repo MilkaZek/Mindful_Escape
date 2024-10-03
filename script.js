@@ -52,18 +52,20 @@ musicButton.addEventListener("click", () => {
 
 //https://api.pexels.com/v1/search?query=ocean&page=${Math.floor(Math.random() * 900 + 1)}&per_page=10
 
-window.addEventListener("load", async () => {
-  const response = await fetch("https://classproxy.rtoal.repl.co/pexels")
-  const data = await response.json()
-  backgroundPhotos = data
-})
+// Removing API Call because Replit no longer allows for proxy hosting
 
-function changePhoto() {
-  background.style.backgroundImage = `url(${backgroundPhotos[photoIndex]})`
-  photoIndex += 1
-  if (photoIndex === 49) {
-    photoIndex = 0
-  }
-}
+// window.addEventListener("load", async () => {
+//   const response = await fetch("https://classproxy.rtoal.repl.co/pexels")
+//   const data = await response.json()
+//   backgroundPhotos = data
+// })
+
+// function changePhoto() {
+//   background.style.backgroundImage = `url(${backgroundPhotos[photoIndex]})`
+//   photoIndex += 1
+//   if (photoIndex === 49) {
+//     photoIndex = 0
+//   }
+// }
 
 setInterval(changePhoto, 10000)
