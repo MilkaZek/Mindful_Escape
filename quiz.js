@@ -93,6 +93,7 @@ function countTally(){
       console.log("works")
     }
   }
+  // Takes users to corresponding stress information page
   window.location.replace(`https://milkazek.github.io/Mindful_Escape/${stressLinks[index]}`)
 }
 
