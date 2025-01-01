@@ -6,7 +6,7 @@
 
 ## What is Mindful Escape?
 - This is a web-app where users can take a quiz that helps them identify what types of stress they are experiencing, then get connected to resources to help them combat that stress.
-- Each 'stress page' includes facts and links to outside sources about that type of stress and may include a fun implementation of an API to help improve a user's day :) (from random jokes to pictures of relatable cats!)
+- Each 'stress page' includes facts and links to outside sources about that type of stress and may include a fun implementation of an API to help users *escape* their state of stress :) (from random jokes to pictures of relatable cats!)
 
 **Note**: This site was originally developed on Replit as a final project during LMU's CSSI program but now runs on GitHub. Here is the link to use the site!
 - https://milkazek.github.io/Mindful_Escape/
